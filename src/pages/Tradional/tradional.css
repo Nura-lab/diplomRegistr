@@ -1,0 +1,44 @@
+*body {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+}
+
+.main_card {
+  height: 270px;
+  width: 270px;
+}
+
+.cards_foto {
+  height: 139px;
+  width: 270px;
+}
+
+.card_name {
+  height: 23px;
+  color: black;
+}
+
+.card_description {
+  width: 246px;
+  height: 63px;
+  font-size: 10px;
+}
+
+.card_buttons {
+  width: 270px;
+  height: 36px;
+  display: flex;
+  border-top: 1px solid #d4d4d6;
+  background: none;
+}
+
+.card_price {
+  height: 36px;
+  width: 136px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-left: 1px solid #d4d4d6;
+}

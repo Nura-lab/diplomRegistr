@@ -1,0 +1,129 @@
+.container {
+  width: 86%;
+  margin: 0 auto;
+}
+
+.start {
+  height: 94px;
+  background-image: url(../img/Group\ 21.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about_text {
+  height: 355px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 46px 0 46px 0;
+  background-image: url(../img/Vector.svg);
+  background-repeat: no-repeat;
+  background-position-x: 656px;
+}
+
+.about_text img {
+  width: 62px;
+  height: 97px;
+}
+
+.about_text h1 {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.about_text p {
+  width: 721px;
+  border-radius: nullpx;
+  text-align: center;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+.end {
+  height: 72px;
+  background-image: url(../img/Group\ 22.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about_second {
+  display: flex;
+  justify-content: space-around;
+  height: 468px;
+  align-items: center;
+}
+
+.video {
+  height: 330px;
+  width: 470px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.video_text p {
+  height: 176px;
+  width: 429px;
+  margin-top: 53px;
+  font-size: 14px;
+}
+
+.about_four {
+  height: 455px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.about_four h1 {
+  text-align: center;
+}
+
+.fotos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_five {
+  display: flex;
+  justify-content: space-around;
+  height: 400px;
+  align-items: center;
+}
+
+.about_five_foto {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.five_text h1 {
+  width: 490px;
+  height: 46px;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 20px 0 41px 0;
+}
+
+.five_text p {
+  width: 770px;
+  height: 138px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.fri{
+  position: absolute;
+  width: 122px;
+  height: 215px;
+  right: 0;
+  top:800px;
+  background-image: url("../img/fri.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+

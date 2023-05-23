@@ -1,0 +1,22 @@
+
+.menu_container {
+  width: 86%;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.blockOne {
+  margin: 0 auto;
+  padding: 0 auto;
+  height: 500px;
+}
+
+.blockTwo {
+  margin-top: 30px;
+  padding: 0 auto;
+  height: 696px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-evenly;
+}

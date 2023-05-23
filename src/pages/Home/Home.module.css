@@ -1,0 +1,106 @@
+.container {
+  width: 86%;
+  margin: 0 auto;
+}
+
+.blockOne {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blockContent {
+  height: 521px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blockContent p {
+  width: 711px;
+  height: 162px;
+  /* padding: ; */
+}
+
+.blockThree {
+  height: 590px;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.blockThree img {
+  width: 370px;
+  height: 233px;
+  margin: 15px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Параметры тени */
+  /* padding: 10px; */
+}
+
+.blockFour {
+  height: 582px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.video iframe {
+  width: 500px;
+  height: 300px;
+}
+.blockFour p {
+  width: 465px;
+  height: 160px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.video {
+  width: 500px;
+  height: 400px;
+}
+
+.fon_one {
+  position: absolute;
+  right: 80px;
+  top: 500px;
+}
+
+.icecream img {
+  position: absolute;
+  top: 800px;
+  left: 80px;
+  width: 103px;
+  height: 125px;
+}
+
+.tatty img {
+  position: absolute;
+  top: 1050px;
+  right: 80px;
+  width: 155px;
+  height: 66px;
+}
+
+.pizza img {
+  width: 107px;
+  height: 50px;
+  position: absolute;
+  left: 50px;
+  top: 1850px;
+}
+.tamak img {
+  width: 159px;
+  height: 70px;
+  position: absolute;
+  right: 150px;
+  top: 2250px;
+}

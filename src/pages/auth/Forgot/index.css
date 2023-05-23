@@ -1,0 +1,99 @@
+.forgot {
+  background-image: url(../../../components/img/forgot.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_forgot {
+  margin: 187px 435px;
+  width: 570px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(254, 254, 254, 0.4);
+  border: 1px solid #ffffff;
+  border-radius: 32px;
+}
+
+.forgot_content {
+  height: 282px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.forgot_send_button {
+  width: 370px;
+  height: 32px;
+  background: #ffb800;
+  border-radius: 32px;
+  border: none;
+}
+
+.forgot_label {
+  width: 34px;
+  height: 17px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.forgot_title {
+  width: 370px;
+  height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.forgot_input {
+  width: 370px;
+  height: 32px;
+  margin-top: 5px;
+  background-color: #ffffff;
+  border: 1px solid #b4b4b4;
+  border-radius: 32px;
+}
+
+.forgot_text {
+  width: 370px;
+  height: 51px;
+  margin-top: 14px;
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.forgot_login {
+  width: 170px;
+  height: 32px;
+  background: #ffffff;
+  border-radius: 32px;
+  border: none;
+}
+
+.forgot_buttons {
+  width: 370px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forgot_signup {
+  width: 170px;
+  height: 32px;
+  background: #ffffff;
+  border-radius: 32px;
+  border: none;
+}

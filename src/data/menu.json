@@ -1,0 +1,67 @@
+[
+    {
+        "id": "1",
+        "img": "https://anestisxasapotaverna.gr/wp-content/uploads/2021/12/ARTICLE-1.jpg",
+        "name": "B",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+        "price": "12",
+        "button": "+ Add order"
+    },
+    {
+        "id": "2",
+        "img": "https://t4.ftcdn.net/jpg/02/25/73/97/240_F_225739755_KDAnE7HIBzYfzHImvgojaVARAd2LLrZW.jpg",
+        "name":  "Самсы",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+        "price": "12",
+        "button": "+ Add order"
+    },
+    {
+        "id": "3",
+        "img": "https://t3.ftcdn.net/jpg/01/42/59/04/240_F_142590473_euCB6vVQ10wzLXNmDWKtPzY2PfrzRgdw.jpg",
+        "name": "manty",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+        "price": "12",
+        "button": "+ Add order"
+    },
+    {
+        "id": "4",
+        "img": "https://img.freepik.com/premium-photo/kazakh-beshbarmak-with-horse-meat-boiled-dough_219193-5534.jpg?size=626&ext=jpg",
+        "name": "Беш бармак",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+        "price": "12",
+        "button": "+ Add order"
+    },
+    {
+        "id": "5",
+        "img": "https://t3.ftcdn.net/jpg/03/42/86/80/240_F_342868073_wsInoKOaeKHXu6kraIaOYudj0EqwpxRc.jpg",
+        "name": "Кымыз",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+        "price": "12",
+        "button": "+ Add order"
+    },
+    {
+        "id": "6",
+        "img": "https://t4.ftcdn.net/jpg/05/81/36/03/240_F_581360362_rTkqbH3iZ2OEdZUx0qPsyla88rmu9fgB.jpg",
+        "name": " Боорсок",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+        "price": "12",
+        "button": "+ Add order"
+    },
+    {
+        "id": "7",
+        "img": "https://as2.ftcdn.net/v2/jpg/05/56/99/13/1000_F_556991362_8ArQdxatg1LSkkSB8ElwfS8VVgVp4rfY.jpg",
+        "name": "Эт",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+        "price": "12",
+        "button": "+ Add order"
+    },
+    {
+        "id": "8",
+        "img": "https://t4.ftcdn.net/jpg/04/72/62/29/240_F_472622913_00rkwfTqr8kuBjq7Y9glR0yTJlLsrrLG.jpg",
+        "name": "Шорпо",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+        "price": "12",
+        "button": "+ Add order"
+    }
+    
+]

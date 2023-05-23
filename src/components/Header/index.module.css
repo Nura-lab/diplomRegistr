@@ -1,0 +1,77 @@
+.container{
+  width: 86%;
+  margin: 0 auto;
+}
+
+.nav {
+  height: 164px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 170px;
+  height: 80px;
+}
+
+.nav ul {
+  width: 770px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 14px;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav a:hover {
+  /* background-color: #FFB800; */
+  text-decoration: underline #ffb800;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.sign,
+.login {
+  display: flex;
+  height: 36px;
+  width: 81px;
+  left: 497px;
+  top: 0px;
+  border-radius: 6px;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #ffb800;
+
+  /* background: rgba(208, 216, 255, 1); */
+}
+.orders_link{
+    position:relative;
+}
+
+.orders_count{
+    position: absolute;
+    top: -16px;
+    right: -10px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+}
+/* modal */
+.modalButton {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 12px 24px;
+  }
