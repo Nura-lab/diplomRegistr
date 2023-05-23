@@ -9,10 +9,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../../../components/img/regstration.svg");
+  background-image: url('../../../components/img/regstration.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Open sans", sans-serif;
+  font-family: 'Open sans', sans-serif;
 }
 
 .signUp form {
@@ -81,4 +81,11 @@
   font-size: 14px;
   font-weight: 400;
   color: white;
+}
+
+.error_alert {
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(240, 52, 52, 1);
 }

@@ -1,72 +1,83 @@
-import React, { useState } from "react";
-import css from "./index.css";
-import lo from "../../../components/img/lo.png";
-import ForgotPassword from "../Forgot";
-import { Button } from "@mui/material";
+import React, { useState } from 'react'
+import css from './index.css'
+import lo from '../../../components/img/lo.png'
+import ForgotPassword from '../Forgot'
+import { Button } from '@mui/material'
+import { useDispatch, useSelector } from 'react-redux'
+import { hanldeChange, login } from '../../../store/reducers/auth'
 
 const SignIn = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const dispatch = useDispatch()
+  const { password, email, error } = useSelector(state => state.auth)
 
-  const formHandler = (e) => {
-    e.preventDefault();
-    console.log(e);
-  };
-  function handleChangeEmail(e) {
-    setEmail(e.target.value);
+  const handleChangeInput = e => {
+    dispatch(hanldeChange({ name: e.target.name, value: e.target.value }))
   }
 
-  function handleChangePassword(e) {
-    setPassword(e.target.value);
+  const formHandler = e => {
+    e.preventDefault()
+    const dataToSend = {
+      email,
+      password
+    }
+    dispatch(login(dataToSend))
   }
 
   return (
-    <div className="login">
-      <div className="logo-holder">
+    <div className='login'>
+      <div className='logo-holder'>
         <form onSubmit={formHandler}>
-          <h1 className="title">Кируу</h1>
-          <label className="input_label">Эл.почта</label>
+          {error.loginError && (
+            <div className='error_alert'>{error.loginError}</div>
+          )}
+          <h1 className='title'>Кируу</h1>
+          <label className='input_label'>Эл.почта</label>
           <input
-            type="text"
-            className="input"
-            placeholder="Эл.почта"
+            type='email'
+            required
+            className='input'
+            placeholder='Эл.почта'
             value={email}
-            onChange={handleChangeEmail}
+            name='email'
+            onChange={handleChangeInput}
           />
-          <label className="input_label">Пароль</label>
+          <label className='input_label'>Пароль</label>
           <input
-            type="text"
-            className="input"
-            placeholder="Пароль"
+            type='text'
+            className='input'
+            placeholder='Пароль'
             value={password}
-            onChange={handleChangePassword}
+            name='password'
+            onChange={handleChangeInput}
           />
-          <div className="forgot_password">
-            <div className="checbox">
-              <input type="checkbox" name="check" id="" />
+          <div className='forgot_password'>
+            <div className='checbox'>
+              <input type='checkbox' name='check' id='' />
               <p>Remember for 30 days </p>
             </div>
             <div>
-              <a className="href" href=".\components\ForgotPassword">
+              <a className='href' href='.\components\ForgotPassword'>
                 Forgot password:
               </a>
             </div>
           </div>
-          <button type="submit" className="button_signin">
+          <button type='submit' className='button_signin'>
             Sign i_signin
           </button>
-          <button type="submit" className="button_signin">
+          <button type='submit' className='button_signin'>
             Sign in with Google
           </button>
-          <div className="signup_free">
+          <div className='signup_free'>
             <p>Don’t have on account?</p>
-            <button className="sign_free_button" href="">Sign up for free</button>
+            <button className='sign_free_button' href=''>
+              Sign up for free
+            </button>
           </div>
         </form>
       </div>
     </div>
-  );
-};
+  )
+}
 // return(
 //     <div className='main'>
 //         <div className='signIn'>
@@ -107,4 +118,4 @@ const SignIn = () => {
 //     </div>
 // )
 // }
-export default SignIn;
+export default SignIn

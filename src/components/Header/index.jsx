@@ -1,20 +1,27 @@
-import React, { useState } from "react";
-import logo2 from ".././../components/img/logo2.png";
-import { Button } from "@mui/material";
-import { Link } from "react-router-dom";
-import css from "./index.module.css";
-import { toggleSidebar } from "../../store/reducers/foods";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import { useDispatch, useSelector } from "react-redux";
-import SidebarOrders from "../../components/SidebarOrders/SidebarOrders";
+import React, { useState } from 'react'
+import logo2 from '.././../components/img/logo2.png'
+import { Button } from '@mui/material'
+import { Link } from 'react-router-dom'
+import css from './index.module.css'
+import { toggleSidebar } from '../../store/reducers/foods'
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
+import { useDispatch, useSelector } from 'react-redux'
+import SidebarOrders from '../../components/SidebarOrders/SidebarOrders'
+import { logout } from '../../store/reducers/auth'
 
 const Header = () => {
-  const dispatch = useDispatch();
-  const { orders } = useSelector((state) => state.foods);
+  const dispatch = useDispatch()
+  const { orders } = useSelector(state => state.foods)
 
   const handleToggle = () => {
-    dispatch(toggleSidebar());
-  };
+    dispatch(toggleSidebar())
+  }
+
+  const handleLogout = () => {
+    dispatch(logout())
+  }
+
+  const { currentUser } = useSelector(state => state.auth)
 
   return (
     <div className={css.container}>
@@ -25,19 +32,19 @@ const Header = () => {
         </div>
         <ul>
           <li>
-            <Link to="/">Негизги баракча</Link>
+            <Link to='/'>Негизги баракча</Link>
           </li>
           <li>
-            <Link to="/TradionalFoods">Улуттук тамактар</Link>
+            <Link to='/TradionalFoods'>Улуттук тамактар</Link>
           </li>
           <li>
-            <Link to="/Publick">Меню</Link>
+            <Link to='/Publick'>Меню</Link>
           </li>
           <li>
-            <Link to="/admin">Профиль</Link>
+            <Link to='/admin'>Профиль</Link>
           </li>
           <li>
-            <Link to="/About">Биз жонундо</Link>
+            <Link to='/About'>Биз жонундо</Link>
           </li>
           <li>
             <div className={css.orders_link}>
@@ -47,15 +54,26 @@ const Header = () => {
               <span className={css.orders_count}>{orders.length}</span>
             </div>
           </li>
-          <button className={css.sign}>
-            <Link to="/auth/signup">Катталуу</Link>
-          </button>
-          <button className={css.login}>
-            <Link to="/auth/signin">Кируу</Link>
-          </button>
+          {currentUser?.email ? (
+            <>
+              <p>{currentUser?.email}</p>
+              <button onClick={handleLogout} className={css.sign}>
+                <Link>Чыгуу</Link>
+              </button>
+            </>
+          ) : (
+            <>
+              <button className={css.sign}>
+                <Link to='/auth/signup'>Катталуу</Link>
+              </button>
+              <button className={css.login}>
+                <Link to='/auth/signin'>Кируу</Link>
+              </button>
+            </>
+          )}
         </ul>
       </nav>
     </div>
-  );
-};
-export default Header;
+  )
+}
+export default Header
